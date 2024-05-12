@@ -1,7 +1,28 @@
 .App {
   text-align: center;
+  background-color: #282c34;
+}
+.grid-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap');
+
+@media (max-width: 768px) {
+  .grid-container {
+    justify-content: space-around;
+  }
+}
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #282c34;
+  font-family: 'Noto Sans', sans-serif; 
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
